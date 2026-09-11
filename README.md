@@ -96,6 +96,10 @@ Aryan Raju Nalawade
 
 B.Sc. Information Technology
 
+### Black Book / Project Report
+
+[📄 View GymMate Black Book](./GymMate Black Book.pdf)
+
 ## 📄 License
 
 This project was developed as an academic project.
