@@ -1,0 +1,199 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.body {
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100vh;
+    flex-direction: column;
+    background-image: url('C:\Aryan\Project\gymmate\frontend\src\components\images\Background1.jpg');
+    background-repeat: no-repeat;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    align-items: center;
+    justify-content: right;
+}
+.title img{
+    width: 120px;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+.Text .text1{
+    margin-top: 2%;
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 500;
+}
+.Text .text2{
+    font-size: 1rem;
+    color: #fff;
+}
+
+.container{
+    margin-bottom: 4%;
+    background-size: fill;
+    width: 100%;
+    width: 400px;
+    height: 510px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    border: 1px solid #000;
+}
+.heading{
+    margin-top: 2%;
+    padding: 0 5%;
+}
+.text{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 600;
+} 
+.txt{
+    font-size: 1rem;
+    color:#e6e6e6;
+}
+.underline{
+    width: 100%;
+    height: 1px;
+    background: #a5a3a3;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+ .SignUp{
+    display: flex;
+    flex-direction: column;
+    margin-left:4%;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    color: #fff;
+ }
+ .SignUp input{
+    margin-top: 3px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 13px;
+ }
+ .personal{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-left: 4%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    color: #fff
+ }
+ .personal1 input{
+    margin-top: 3px;
+    height: 20px;
+    padding: 1%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 13px;
+ }
+ 
+ .btn{
+    margin-top: 2%;
+    width: 90%;
+    padding: 10px;
+    margin-left: 5%;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+ }
+ .btn:hover{
+    background: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%);
+ }
+ .signin{
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    color: #fff;
+ }
+ .signin a{
+    text-decoration: none;
+    color: #0a71f8;
+ }
+    .signin a:hover{
+        text-decoration: underline;
+    }
+
+
+    @media (max-width: 1024px) {
+        .body{
+    display: flex;
+    justify-content: center;    
+        }
+  .container {
+    width: auto;
+    height: auto;
+  }
+  .title img {
+    width: 80px;
+    height: 80px;
+  }
+  .LoginSignUp .text1 {
+    font-size: 2rem;
+  }
+  .LoginSignUp .text2 {
+    font-size: 1rem;
+  }
+  .LoginSignUp form{
+    width: auto;
+  }
+  .personal1 input{
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* .body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #475564 0%, #031b3d 100%); 
+
+  } */
+  .container .text{
+    font-size: 1.5rem;
+  }
+  .container .txt{
+    font-size: 1rem;
+  }
+  .container {
+    width: 90%;
+    height: 100%;
+  }
+    .title img {
+        width: 80px;
+        height: 80px;
+    }   
+    .LoginSignUp .text1 {
+        font-size: 2rem;
+    }
+    .LoginSignUp .text2 {
+        font-size: 1rem;
+    }
+    .LoginSignUp form{
+        width: 80%;
+    }
+    .personal1 input{
+        width: 90%;
+    }
+}

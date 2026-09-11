@@ -1,0 +1,107 @@
+.goal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.goal {
+  background: white;
+  padding: 25px;
+  width: 350px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.goal h2 {
+  margin-bottom: 15px;
+}
+
+.goal input,
+.goal select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.goal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.goal-actions .cancel {
+  background: #ccc;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+.goal-actions .save {
+  background: linear-gradient(135deg, #ff7a18, #ff9f1c);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .goal-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .goal {
+    width: 80%;
+    padding: 20px;
+  } 
+  
+  .goal input,
+  .goal select {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+}
+
+@media (max-width: 480px) {
+  .goal-overlay {
+    width: auto;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .goal {
+    width: 70%;
+    padding: 20px;
+  }
+  .goal input,
+  .goal select {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+
+}

@@ -1,0 +1,209 @@
+.main {
+  width: 100%;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+.content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.card {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+.func {
+  flex: 1;
+  min-width: 280px;
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.step-btn {
+  margin-top: 1rem;
+  padding: 8px 16px;
+  background: orange;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  color: white;
+}
+.h2 h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+.ex-amt h4 {
+  font-size: 2rem;
+  font-weight: 1000;
+}
+.p,
+.p1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+.val {
+  padding: 0.5rem;
+}
+.val1 {
+  background: #f3f4f6;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+.val2 {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+.body-parts h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.part-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  cursor: pointer;
+}
+.part-card1:hover{
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.part-card1 {
+  height: 250px;
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.5rem;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.part-card1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+.part-card1 h2 {
+  position: relative;
+  z-index: 2;
+  color: white;
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+#chest {
+  background-image: url("https://boxlifemagazine.com/wp-content/uploads/2023/09/Untitled-design-5-1-1.png");
+}
+#back {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPYO874NYTYFWWewBNlhzQMPABCD3H1GNhfQ&s");
+}
+#shoulder {
+  background-image: url("https://img.freepik.com/premium-photo/bodybuilder-strong-man-pumping-up-shoulder-muscles_174475-856.jpg");
+}
+#legs {
+  background-image: url("https://www.myprotein.com/images?url=https://blogscdn.thehut.net/app/uploads/sites/478/2021/05/shutterstock_710376784opt_featured_1620635687_1200x672_acf_cropped.jpg&auto=avif&width=1200&fit=crop");
+}
+#abs {
+  background-image: url("https://tse4.mm.bing.net/th/id/OIP.QOUeQto4nExhCRFWmfkaTAHaD7?rs=1&pid=ImgDetMain&o=7&rm=3");
+}
+#cardio {
+  background-image: url("https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+#arms {
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/043/180/202/small/intense-arm-workout-session-captured-in-the-gym-photo.jpeg");
+}
+#warm {
+  background-image: url("https://www.shutterstock.com/image-photo/handsome-young-middle-eastern-male-260nw-2114898374.jpg");
+}
+
+.sync-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.status-badge-green {
+  padding: 8px 16px;
+  background: #e8f5e9;
+  color: #2e7d32;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.sync-mini-btn {
+  padding: 4px 10px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.spin {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .part-card {
+    display: grid;
+    grid-template-rows: repeat(2, 180px); 
+    grid-template-columns: repeat(4, 250px); 
+    grid-auto-flow: column;
+    
+    gap: 0.5rem;
+    overflow-x: auto; 
+    padding-bottom: 10px; 
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .part-card::-webkit-scrollbar {
+    height: 10px;
+  }
+  .part-card::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 10px;
+  }
+
+  .part-card1 {
+    width: 250px;
+    height: 180px;
+    gap: 5px;
+    scroll-snap-align: start;
+  }
+
+  .ex-amt h4 {
+    font-size: 1.5rem;
+  }
+}

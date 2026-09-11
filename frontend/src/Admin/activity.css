@@ -1,0 +1,135 @@
+.Main {
+  width: 100%;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+.activity {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.activity-table {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+}
+thead {
+  background-color: #a3d78a;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.view-btn {
+  padding: 8px;
+  width: 70px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.del-btn {
+  padding: 8px;
+  width: 70px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.line {
+  border: 1px solid #ccc;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+
+.user-details1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.user-detatils2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.pagination button {
+  padding: 5px 12px;
+  min-width: 80px;
+  height: 35px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background: white;
+  cursor: pointer;
+}
+
+.pagination span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .user-detatils2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .activity-table h1 {
+    font-size: 1.5rem;
+  }
+  .pagination button {
+    padding: 5px;
+    min-width: 60px;
+  }
+}

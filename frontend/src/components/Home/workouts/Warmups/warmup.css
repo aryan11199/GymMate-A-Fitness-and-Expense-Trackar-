@@ -1,0 +1,60 @@
+.Warmups-body {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.Warmups-content {
+  padding: 2%;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 20px;
+}
+.Warmups1 {
+  display: flex;
+  height: 300px;
+  width: 300px;
+  background-color: #000;
+  border-radius: 10px;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  box-shadow: rgb(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.Warmups1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.Warmups1 h3 {
+  font-size: 1.2rem;
+  margin-left: 2%;
+}
+
+#JP {
+  background-image: url("https://burnfit.io/en/wp-content/uploads/sites/3/2026/01/JUMPING_JACK.gif");
+}
+#HK {
+  background-image: url("https://burnfit.io/en/wp-content/uploads/sites/3/2026/01/HIGH_KNEE_SKIP.gif");
+}
+#MC {
+  background-image: url("https://burnfit.io/en/wp-content/uploads/sites/3/2026/01/MOUNT_CLIMB.gif");
+}
+#JS {
+  background-image: url("https://burnfit.io/en/wp-content/uploads/sites/3/2026/01/JUMP_SQT.gif");
+}
+
+#Plank {
+  background-image: url("https://burnfit.io/en/wp-content/uploads/sites/3/2026/01/PLANK-2.gif");
+}
+#PS {
+  background-image: url("https://burnfit.io/wp-content/uploads/2023/11/PUSH_UP.gif");
+}
+#split {
+  background-image: url("https://burnfit.io/en/wp-content/uploads/sites/3/2026/01/BB_SPLIT_SQT.gif");
+}
+#Hip {
+  background-image: url("https://burnfit.io/en/wp-content/uploads/sites/3/2026/01/HIP_THRUST.gif");
+}
+#stif {
+  background-image: url("https://burnfit.io/en/wp-content/uploads/sites/3/2026/01/STIFF_DL.gif");
+}

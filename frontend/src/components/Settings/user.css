@@ -1,0 +1,150 @@
+.user_set{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem;  
+}
+.user_set h1{
+    font-size: 2.5rem;
+}
+.user_set h4{
+  font-size: 1rem;
+  color: #000;
+}
+
+.user{
+  margin-top: 10px;
+  width: auto;
+  background-color: #fff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: solid black 167px 185px 0px 8px 24px;
+}
+.user_head{
+    padding: 2%;
+    margin: 0%;
+    width: auto;
+    background-color:#123456;
+    color: #fff;
+}
+.user_head h4{
+  font-size: 1rem;
+  color: #fff;
+}
+.user_container {
+  padding: 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  width: auto;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.user_container input {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  width: 450px;
+  background-color: #EEEEEE;
+}
+
+.bt button{
+  width: 120px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: #607B8F;
+  cursor: pointer;
+}
+.bt button:hover{
+  color: #fff;
+  background-color: #0361a8;
+}
+.goal{
+  margin-top: 30px;
+  width: auto;
+  background-color: #fff;
+  border: none;
+  border-radius: 15px;
+} 
+.goal_head{
+    padding: 2%;
+    margin: 0%;
+    margin-top: 10px;
+    height: max-content;
+    width: auto;
+    background-color:#123456;
+    color: #fff;
+}
+.goal_head h4{
+  font-size: 1rem;
+  color: #fff;
+}
+.goal_container {
+  padding: 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  width: auto;
+  gap: 40px;
+  margin-top: 20px;
+}
+.goal_container input {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  width: 400px;
+  background-color: #EEEEEE;
+}
+.store{
+  margin-top: 30px;
+  width: auto;
+  height: 330px;
+  background-color: #fff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: solid black 157px 165px 0px 8px 24px;
+}
+.profile_summary{
+    padding: 2%;
+    margin: 0%;
+    margin-top: 10px;
+    height: max-content;
+    width: auto;
+    background-color:#123456;
+    color: #fff;
+}
+.profile_summary h4{
+  font-size: 1rem;
+  color: #fff;
+}
+.info{
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 10px;
+}
+.store1{
+    display: flex;
+    padding: 2%;
+    width: 200px;
+    height: 50px;
+    flex-direction: column;
+    gap: 5px;
+    border: #f5f2f2;
+    background-color: #f5f3f3;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.bt1 button{
+  margin-left: 30px;
+  width: 120px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: #607B8F;
+  cursor: pointer;
+}
+.bt1 button:hover{
+  color: #fff;
+  background-color: #0361a8;
+}

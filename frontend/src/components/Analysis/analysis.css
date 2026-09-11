@@ -1,0 +1,95 @@
+.main {
+  width: 100%;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+.analysis {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.analys-head {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.analys-head h1 {
+  font-size: 2rem;
+  font-style: italic;
+  margin: 0;
+}
+
+.analys-head span {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #7d7d7c;
+  font-weight: 500;
+}
+
+/* Toggle Buttons Mobile sathi wrap kelyat */
+.view-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Mobile var buttons ekakhali ek yeu shaktat */
+}
+
+.toggle-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+  font-size: 0.9rem;
+}
+
+.analys-card {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 10px;
+}
+
+.cal-card,
+.work-card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  min-height: 350px; /* Automatic height adjustment */
+}
+
+.cal-card h1,
+.work-card h1 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .analys-head h1 {
+    font-size: 1.6rem;
+  }
+  .analys-head span {
+    font-size: 0.9rem;
+  }
+
+  .cal-card,
+  .work-card {
+    padding: 15px;
+    height: 320px; /* Mobile var chart height thodi kami */
+  }
+
+  .view-toggle button {
+    flex: 1; /* Mobile var buttons saman width che distil */
+    font-size: 0.8rem;
+    padding: 8px 10px;
+  }
+}

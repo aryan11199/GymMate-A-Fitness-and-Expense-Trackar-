@@ -1,0 +1,50 @@
+.abs-body {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.abs-content {
+  padding: 2%;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 20px;
+}
+.abs1 {
+  display: flex;
+  height: 300px;
+  width: 300px;
+  background-color: #000;
+  border-radius: 10px;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  box-shadow: rgb(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.abs1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.abs1 h3 {
+  font-size: 1.2rem;
+  margin-left: 2%;
+}
+
+#crunch {
+  background-image: url("https://burnfit.io/en/wp-content/uploads/sites/3/2026/01/CRUNCH.gif");
+}
+#Leg-rais {
+  background-image: url("https://burnfit.io/en/wp-content/uploads/sites/3/2026/01/LEG_RAISE.gif");
+}
+#Plank {
+  background-image: url("https://burnfit.io/en/wp-content/uploads/sites/3/2026/01/PLANK.gif");
+}
+#cycle {
+  background-image: url("https://burnfit.io/en/wp-content/uploads/sites/3/2026/01/ABS_AIR_BIKE.gif");
+}
+#twist {
+  background-image: url("https://burnfit.io/en/wp-content/uploads/sites/3/2026/01/RUS_TWIST.gif");
+}
+#hang {
+  background-image: url("https://burnfit.io/en/wp-content/uploads/sites/3/2026/01/HANG_LEG_RAIGE.gif");
+}

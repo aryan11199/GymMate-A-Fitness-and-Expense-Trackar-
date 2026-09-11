@@ -1,0 +1,265 @@
+.formatted-plan {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plan-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #10b981;
+}
+
+.plan-header h3 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 1.5rem;
+}
+
+.plan-section {
+  margin-bottom: 20px;
+}
+
+.plan-section h4 {
+  color: #1f2937;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.plan-section ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.plan-section li {
+  padding: 6px 0;
+  padding-left: 20px;
+  position: relative;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.plan-section li.item::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #10b981;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.plan-section li.option {
+  font-weight: 600;
+  color: #1f2937;
+  margin-top: 8px;
+}
+
+.plan-section li.option::before {
+  display: none;
+}
+
+.plan-section li.text {
+  padding-left: 40px;
+  font-size: 0.95rem;
+}
+
+.formatted-plan {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.plan-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #10b981;
+}
+
+.plan-header h3 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 1.3rem;
+}
+
+.plan-content {
+  line-height: 1.8;
+}
+
+.meal-heading {
+  color: #1f2937;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.meal-option {
+  color: #374151;
+  font-weight: 600;
+  margin: 8px 0 4px 0;
+}
+
+.meal-item {
+  list-style: none;
+  padding-left: 20px;
+  position: relative;
+  color: #4b5563;
+  margin: 4px 0;
+}
+
+.meal-item::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #10b981;
+  font-weight: bold;
+}
+
+.meal-text {
+  color: #6b7280;
+  margin: 4px 0;
+  padding-left: 20px;
+}
+
+.plan p {
+  color: #9ca3af;
+  font-style: italic;
+  text-align: center;
+}
+.main {
+  width: 100%;
+  min-height: 100vh;
+  overflow-y: auto;
+  /* padding-bottom: 2rem; */
+}
+.diet {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.diet-head {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.diet-head h1 {
+  font-size: 2rem;
+  font-style: italic;
+}
+.diet-head h4 {
+  font-size: 1rem;
+  font-style: italic;
+  color: #7d7d7c;
+  font-weight: 700;
+}
+.diet-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+  /* padding: 2%; */
+}
+.under {
+  display: flex;
+  border: 1px solid #000;
+}
+.diet-body1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.diet-body1 span {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.diet-body1 form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 10px;
+  padding: 3%;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: rgb(189, 177, 175) 0px 8px 24px;
+}
+.diet-body1 form input {
+  width: 95%;
+  padding: 2%;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+.diet-body1 form select {
+  width: 100%;
+  padding: 2%;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+.diet-body1 form button {
+  margin-left: 80px;
+  width: 50%;
+  height: 40px;
+  padding: 2%;
+  border: none;
+  border-radius: 10px;
+  background-color: #ff5a00;
+  color: #fff;
+}
+.plan {
+  max-height: 450px;
+  overflow-y: auto;
+  padding: 10px;
+  display: flex;
+  width: 550px;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: rgb(189, 177, 175) 0px 8px 24px;
+  flex-direction: column;
+}
+
+.plan pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: inherit;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.plan p {
+  color: #666;
+  font-style: italic;
+}
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+  .diet-body {
+    flex-direction: column;
+  }
+  .diet-body1 {
+    grid-template-columns: 1fr;
+  }
+  .diet-body1 form {
+    width: auto;
+  }
+  .plan {
+    width: auto;
+  }
+}

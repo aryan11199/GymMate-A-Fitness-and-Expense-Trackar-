@@ -1,0 +1,110 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-card {
+  background: white;
+  width: 520px;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.close {
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.in, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-top: 6px;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.cancel {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.submit {
+  background: #ff5a00;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .modal-card{
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-card{
+    width: auto;
+  }
+  .modal-header h2{
+    font-size: 1.2rem;
+  }
+  .subtitle{
+    font-size: 1rem;
+  }
+  .full-width{
+    grid-column: auto;
+  }
+  label{
+    font-size: 1rem;
+  }
+  textarea{
+    height: auto;
+  }
+}

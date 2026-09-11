@@ -1,0 +1,56 @@
+.back-body {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.back-content {
+  padding: 2%;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 10px;
+}
+.back1 {
+  display: flex;
+  height: 300px;
+  width: 300px;
+  background-color: #000;
+  border-radius: 10px;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  transition: 0s;
+}
+.back1 {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.back1 h3 {
+  font-size: 1.2rem;
+  margin-left: 2%;
+}
+
+#pull-ups {
+  background-image: url("https://burnfit.io/en/wp-content/uploads/sites/3/2026/01/PULL_UP.gif");
+}
+#lat {
+  background-image: url("https://burnfit.io/en/wp-content/uploads/sites/3/2026/01/LAT_PULL_DOWN.gif");
+}
+#seat {
+  background-image: url("https://burnfit.io/en/wp-content/uploads/sites/3/2026/01/SEATED_CABLE_ROW.gif");
+}
+#bell {
+  background-image: url("https://burnfit.io/en/wp-content/uploads/sites/3/2026/01/BB_PULLOVER.gif");
+}
+#hyper {
+  background-image: url("https://burnfit.io/en/wp-content/uploads/sites/3/2026/02/HPET.gif");
+}
+#face {
+  background-image: url("https://burnfit.io/en/wp-content/uploads/sites/3/2026/01/FACE_PULL.gif");
+}
+#str {
+  background-image: url("https://burnfit.io/en/wp-content/uploads/sites/3/2026/01/CABLE_ARM_PULL_DOWN.gif");
+}
+#one {
+  background-image: url("https://burnfit.io/en/wp-content/uploads/sites/3/2026/01/OA_DB_ROW.gif");
+}

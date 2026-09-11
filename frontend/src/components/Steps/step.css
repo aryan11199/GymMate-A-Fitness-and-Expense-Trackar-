@@ -1,0 +1,36 @@
+/* Overlay */
+.step-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Box */
+.step-container {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;   /* 👈 increase spacing */
+  max-width: 400px;
+  width: 90%;
+}
+
+/* fix content alignment */
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* fix button */
+.steps button {
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,159 @@
+.admin {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  background: #111827;
+  color: white;
+  width: 250px;
+  transition: 0.3s;
+  padding: 15px;
+  height: 100vh;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin.close .sidebar {
+  width: 70px;
+}
+
+.sidebar .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.sidebar img {
+  width: 80px;
+  height: 60px;
+  border-radius: 8px;
+}
+
+.sidebar a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  margin: 6px 0;
+  cursor: pointer;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  background: #1f2937;
+}
+
+.sidebar a.active {
+  background: #2563eb;
+}
+
+.Main {
+  flex: 1;
+  background: #f9fafb;
+  overflow-y: auto;
+  min-width: 0;
+}
+
+.Topbar {
+  height: 60px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Topbar1,
+.Topbar2 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.menu-btn,
+.mobile-close-btn {
+  cursor: pointer;
+}
+
+.Logout-btn {
+  padding: 10px;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.Logout-btn:hover {
+  background: #ff1a1a;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 77, 77, 0.3);
+}
+
+
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.mobile-close-btn {
+  display: none;
+  color: white;
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    z-index: 1000;
+    left: -250px; 
+  }
+
+  .admin.open .sidebar {
+    left: 0;
+    width: 250px;
+  }
+
+  .admin.close .sidebar {
+    left: -250px;
+    width: 0;
+    padding: 0;
+  }
+
+  .mobile-close-btn {
+    display: block;
+  }
+
+  .Topbar1 span {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Topbar {
+    padding: 0 10px;
+  }
+  .Logout-btn {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
